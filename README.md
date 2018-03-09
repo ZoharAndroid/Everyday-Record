@@ -1,5 +1,5 @@
 # Everyday-Record
-<font size =5>
+<font size=4>
 记录每天遇到的问题以及解决方法，学习上的东西记录
 
 # 2018年2月28日
@@ -65,8 +65,26 @@ h——hard-float，指浮点运算直接由CPU（APU）完成，而不用通过
  l——little-endian。
 
 ## 5、树莓派交叉编译的官方网址
-<font size = 5><https://redmine.named-data.net/projects/ndn-embedded/wiki/Cross-compiling_NDN_projects_for_Raspberry_Pi>
+<https://redmine.named-data.net/projects/ndn-embedded/wiki/Cross-compiling_NDN_projects_for_Raspberry_Pi>
 
 
 # 2018年3月9日
 ## 1、Linux中gcc -L/path 和 -I/path的意思是什么？
+-L/path:意思是指定要找到的lib的目录，如-L/lib,-L/lib64;<br/>
+-I/path:意思是指定要找的include文件，默认值是放在/usr/include底下，如：-I/usr/include
+
+## 2、gcc的一些用法
+（1）gcc -c hello.c
+> 会自动产生hello.o这个文件，但是并不会产生二进制行文件
+
+（2）gcc -O -c hello.c
+> 会自动产生hello.c这个文件，并进行优化
+
+（3）gcc sin.c -lm -L/lib -I/usr/include
+> 会产生二进制文件；-lm：指定的是libm.so 或 libm.a这个函数库文件；-L 后面接的路径是函数库的搜寻目录；-I接的路径是源码内include文件之所在目录
+
+（4）gcc -o hello hello.c
+> -o后面接的是要输出的二进制文件名
+
+（5）gcc -o hello hello.c -Wall
+> -Wall 是出现更多的编译信息
