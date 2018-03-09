@@ -25,7 +25,7 @@
 
 ----------
 
-##1、笔记记录<br/>
+## 1、笔记记录
 The major components of this kit are:
 
 	
@@ -54,7 +54,7 @@ There are other libraries included for further exploration of NDN:
 （5）file /lib/systemd/systemd: 特殊参数来查看系统架构类型
 （6）查看cpu信息：cat /proc/cpuinfo
 
-##3、armhf是什么？
+## 3、armhf是什么？
 armel：也即softfp，用浮点运算单元（fpu）计算，但是传参数用普通寄存器传，这样中断的时候，只需要保存普通寄存器，中断负荷小，但是参数需要转换成浮点的再计算。
 
 armhf：也即hard，用fpu计算，传参数用fpu中的浮点寄存器传，省去了转换性能最好，但是中断负荷高。
@@ -64,9 +64,9 @@ h——hard-float，指浮点运算直接由CPU（APU）完成，而不用通过
 
  l——little-endian。
 
-## 5、树莓派交叉编译的官方网址</br>
+## 5、树莓派交叉编译的官方网址
 <font size = 5><https://redmine.named-data.net/projects/ndn-embedded/wiki/Cross-compiling_NDN_projects_for_Raspberry_Pi>
 
 
 # 2018年3月9日
-##1、Linux中gcc -L/path 和 -I/path的意思是什么？
+## 1、Linux中gcc -L/path 和 -I/path的意思是什么？
