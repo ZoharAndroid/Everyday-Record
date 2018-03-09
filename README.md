@@ -69,3 +69,4 @@ h——hard-float，指浮点运算直接由CPU（APU）完成，而不用通过
 
 
 # 2018年3月9日
+##1、Linux中gcc -L/path 和 -I/path的意思是什么？
