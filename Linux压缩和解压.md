@@ -14,7 +14,6 @@
 	gzip -d 文件名：解压，压缩的文件也将被删除
 
 
-----------
 
 # bzip2
 
@@ -53,7 +52,7 @@
 
 > 可以简单记忆下面简单的命令
 > 
-- **压 缩：tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称**
+>- **压 缩：tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称**
 > 
 >
 >- **查 询：tar -jtv -f filename.tar.bz2**
@@ -64,6 +63,9 @@
 
 
 
-  **tar不会自动产生后缀名，所以需要自己在文件的后面添加，比如.tar.gz / .tar.bz2 / .tar.xz**
+  **tar不会自动产生后缀名，所以需要自己在文件的后面添加，比如.tar.gz / .tar.bz2 / .tar.xz。**
+	
+
+gzip/bzip2/xz则会自动产生相应的后缀
 
 
